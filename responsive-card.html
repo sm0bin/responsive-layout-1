@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive card 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            /* height: 40vh; */
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            margin: 0 auto;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .img-holder {
+            width: 40%;
+            /* height: 100%; */
+            /* height: 100px; */
+            /* object-fit: cover; */
+            border-radius: 10px 0 0 10px;
+        }
+
+        .card img {
+            /* width: 100px; */
+            width: 300px;
+            height: 300px;
+            /* height: 100%; */
+            object-fit: cover;
+            object-position: left top;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .card-body {
+            padding: 20px 0;
+        }
+
+        .card-body h2 {
+            margin-bottom: 10px;
+            font-size: 3rem;
+        }
+
+        .card-body p {
+            margin-bottom: 24px;
+            font-size: 1.25rem;
+            line-height: 1.5;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        @media screen and (max-width: 768px) {
+            .card {
+                display: inline;
+            }
+
+            .card img {
+                /* width: 100px; */
+                width: 100%;
+                /* height: 100%; */
+                /* object-fit: cover; */
+                border-radius: 10px;
+            }
+        }
+    </style>
+
+<body>
+    <main>
+        <section>
+            <h1>Responsive card 1</h1>
+            <div class="card">
+                <div class="img-hold">
+                    <img src="img/dom-hill-nimElTcTNyY-unsplash.jpg" alt=""
+                        srcset="img/lady-phone.jpg 576w, img/lady-tablet.jpg 992w, img/lady-big.jpg 1200w">
+                </div>
+                <div class="card-body">
+                    <h2>Card title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vel voluptatibus unde dicta dolorum
+                        facilis? Expedita deserunt omnis ipsa, minima dolore voluptate illo quas saepe perspiciatis a
+                        sed odit impedit iusto nemo. Numquam iusto dolorem asperiores voluptatum cum doloremque vitae.
+                    </p>
+                    <button>Read more</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-hold">
+
+                    <img src="img/lady-big.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <h2>Card title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vel voluptatibus unde dicta dolorum
+                        facilis? Expedita deserunt omnis ipsa, minima dolore voluptate illo quas saepe perspiciatis a
+                        sed odit impedit iusto nemo. Numquam iusto dolorem asperiores voluptatum cum doloremque vitae.
+                    </p>
+                    <button>Read more</button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-hold">
+
+                    <img src="img/girl-1990347.jpg" alt="">
+                </div>
+                <div class="card-body">
+                    <h2>Card title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam vel voluptatibus unde dicta dolorum
+                        facilis? Expedita deserunt omnis ipsa, minima dolore voluptate illo quas saepe perspiciatis a
+                        sed odit impedit iusto nemo. Numquam iusto dolorem asperiores voluptatum cum doloremque vitae.
+                    </p>
+                    <button>Read more</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
